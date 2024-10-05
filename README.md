@@ -44,7 +44,7 @@ yarn add @carlossts/rtn-local-authentication
 
 Local device authentication process (using password, PIN, pattern or fingerprint), verifying that the device is protected by some security method, such as a password or biometrics.
 
-Observation: If the device does not have local authentication, return success with the code WITHOUT_AUTENTICATION.
+Observation: If the device does not have local authentication, return success with the code WITHOUT_AUTHENTICATION.
 
 ## Options
 

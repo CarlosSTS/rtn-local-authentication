@@ -18,7 +18,7 @@ class LocalAuthenticationModule(reactContext: ReactApplicationContext) : NativeG
         private const val E_AUTH_CANCELLED = "E_AUTH_CANCELLED"
         private const val E_FAILED_TO_SHOW_AUTH = "E_FAILED_TO_SHOW_AUTH"
         private const val E_ONE_REQ_AT_A_TIME = "E_ONE_REQ_AT_A_TIME"
-        private const val WITHOUT_AUTENTICATION = "WITHOUT_AUTENTICATION"
+        private const val WITHOUT_AUTHENTICATION = "WITHOUT_AUTHENTICATION"
     }
 
     private var mKeyguardManager: KeyguardManager = reactContext.getSystemService(Context.KEYGUARD_SERVICE) as KeyguardManager
@@ -67,7 +67,7 @@ class LocalAuthenticationModule(reactContext: ReactApplicationContext) : NativeG
         }
 
         if (!mKeyguardManager.isDeviceSecure) {
-            promise.resolve(WITHOUT_AUTENTICATION)
+            promise.resolve(WITHOUT_AUTHENTICATION)
             return
         }
 
