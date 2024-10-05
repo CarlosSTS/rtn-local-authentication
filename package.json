@@ -1,0 +1,39 @@
+{
+  "name": "@carlossts/rtn-local-authentication",
+  "version": "1.0.0",
+  "description": "Local authentication with Turbo Modules",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CarlosSTS/rtn-local-authentication.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CarlosSTS/rtn-local-authentication/issues"
+  },
+  "homepage": "https://github.com/CarlosSTS/rtn-local-authentication#readme",
+  "main": "js/index.ts",
+  "react-native": "js/index",
+  "source": "js/index",
+  "files": [
+    "js",
+    "android",
+    "!android/build"
+  ],
+  "keywords": [
+    "react-native",
+    "android"
+  ],
+  "license": "MIT",
+  "devDependencies": {},
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "codegenConfig": {
+    "name": "RTNLocalAuthenticationSpec",
+    "type": "modules",
+    "jsSrcsDir": "js",
+    "android": {
+      "javaPackageName": "com.rtnlocalauthentication"
+    }
+  }
+}
