@@ -59,7 +59,7 @@ Observation: If the device does not have local authentication, return success wi
 ```js
 import React, { useCallback, useEffect } from 'react';
 import { Alert, View } from 'react-native';
-import {RNTLocalAuthentication} from 'rtn-local-authentication';
+import {RNTLocalAuthentication} from '@carlossts/rtn-local-authentication';
 
 const App = () => {
   const authenticationLocal = useCallback(async () => {
@@ -102,7 +102,7 @@ Checks if the device has some type of authentication.
 ```js
 import React, { useCallback, useEffect } from 'react';
 import { Alert, View } from 'react-native';
-import {RNTLocalAuthentication} from 'rtn-local-authentication';
+import {RNTLocalAuthentication} from '@carlossts/rtn-local-authentication';
 
 const App = () => {
   const isDeviceSecure = useCallback(async () => {
